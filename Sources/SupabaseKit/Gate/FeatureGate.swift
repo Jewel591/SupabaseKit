@@ -7,6 +7,7 @@ import Foundation
 
 /// 功能访问控制
 /// 提供基于认证状态的功能门控
+@MainActor
 public enum FeatureGate {
     /// 检查当前是否为访客模式
     public static var isGuestMode: Bool {
